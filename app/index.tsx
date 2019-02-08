@@ -13,4 +13,4 @@ class App extends React.Component<Props> {
     }
 }
     
-ReactDOM.render(< App hello={'data'} /> , document.getElementById( "app" ))
+ReactDOM.render(< App hello={'false'} /> , document.getElementById( "app" ))

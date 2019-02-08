@@ -1,16 +1,41 @@
 {
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react",
-    "module": "commonjs",
-    "noImplicitAny": true,
-    "outDir": "./build/",
-    "preserveConstEnums": true,
-    "removeComments": true,
-    "sourceMap": true,
-    "target": "es5"
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "types/**/*.d.ts"
+    ]
   },
-  "include": [
-    "./app/**/*"
-  ]
+  "jsRules": {},
+  "rules": {
+    "no-implicit-dependencies": false,
+    "interface-name": [true, "never-prefix"],
+    "interface-over-type-literal": false,
+    "member-access": [true, "no-public"],
+    "object-literal-sort-keys": false,
+    "no-submodule-imports": false,
+    "ordered-imports": false,
+    "variable-name": [true, "check-format", "allow-pascal-case", "allow-leading-underscore"],
+    "array-type": [true, "array"],
+    "no-angle-bracket-type-assertion": true,
+    "jsx-no-lambda": false,
+    "triple-equals": true,
+    "jsx-ban-elements": {
+      "options": [
+        ["^form$", "Use app/components/forms/Form instead."],
+        ["^Typography$", "Use app/components/Text instead."]
+      ]
+    },
+    "jsx-boolean-value": false,
+    "prefer-conditional-expression": false,
+    "no-empty-interface": false,
+    "no-shadowed-variable": false,
+    "no-unused-expression": false,
+    "callable-types": false,
+    "no-any": true
+  }
 }
