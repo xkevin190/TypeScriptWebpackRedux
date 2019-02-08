@@ -5,7 +5,7 @@ type Props ={
     hello: boolean;
 }
 
-class App extends React.Component<Props> {
+class App extends React.Component<Props,any> {
     render(){
         return(
             <div>hello word</div>
