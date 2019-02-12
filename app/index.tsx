@@ -1,16 +1,8 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-type Props ={
-    hello: boolean;
-}
+import Test from './Test'
 
-class App extends React.Component<Props,any> {
-    render(){
-        return(
-            <div>hello word</div>
-        )
-    }
-}
+
     
-ReactDOM.render(< App hello={'false'} /> , document.getElementById( "app" ))
+ReactDOM.render(< Test /> , document.getElementById( "app" ))

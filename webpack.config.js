@@ -1,7 +1,10 @@
 const path = require("path")
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const merge = require('webpack-merge');
+const config = require('./webpack.render.config');
+const nodeExternals = require('webpack-node-externals');
 
-module.exports = {
+module.exports = merge(config, {
   mode: 'development',
    entry: path.resolve(__dirname, 'app', 'index.tsx'),
    output:{
@@ -56,9 +59,16 @@ module.exports = {
          
       },
       plugins: [new ForkTsCheckerWebpackPlugin()],
-      
       devServer:{
           port:3000,
           contentBase: path.resolve(__dirname, 'app')
+      },
+
+      resolve: {
+        extensions: ['.js', '.ts', '.tsx', '.json'],
+        modules: [
+          path.join(__dirname, 'app'),
+          'node_modules',
+        ]
       }
-}  
+}) 
