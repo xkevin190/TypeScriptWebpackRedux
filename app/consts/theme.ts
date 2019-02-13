@@ -1,5 +1,8 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeOptions } from '@material-ui/core/styles/createMuiTheme';
+import 'typeface-roboto';
+import 'typeface-titillium-web';
+import '@fortawesome/fontawesome-free/js/all';
 import merge from 'deepmerge';
 
 export const colors = {
@@ -182,15 +185,12 @@ export function getTheme() {
           textTransform: 'initial',
           borderRadius: '2px',
           boxShadow: 'none',
-          padding: '8px 26px',
           minHeight: '30px',
-          height: '30px',
         },
         colorInherit: {
           backgroundColor: '#EA2864',
           borderRadius: '2px',
           boxShadow: 'none',
-          padding: '8px 26px',
           color: '#fff',
           '&:hover': {
             opacity: 0.9,
@@ -202,10 +202,8 @@ export function getTheme() {
           backgroundColor: colors.colorAction,
           borderRadius: '2px',
           boxShadow: 'none',
-          padding: '8px 26px',
           '&:hover': {
             backgroundColor: '#00b158',
-            padding: '8px 26px',
             borderRadius: '2px',
           },
           '&:seleted': {
@@ -314,35 +312,6 @@ export function getTheme() {
         },
       },
 
-      MuiTableRow: {
-        head: {
-          height: '40px',
-          background: colors.head,
-          textTransform: 'uppercase',
-        },
-        selected: {
-          color: colors.text.primary,
-        },
-
-        root: {
-          height: '40px',
-          borderColor: 'transparent',
-          '&$selected': {
-            backgroundColor: colors.head,
-            fontWeight: 700,
-          },
-
-          '&$hover:hover': {
-            backgroundColor: colors.head,
-          },
-          '& th:last-child': {
-            paddingRight: 20,
-          },
-          '& th:first-child': {
-            paddingLeft: 20,
-          },
-        },
-      },
       MuiCardHeader: {
         root: {
           paddingLeft: '20px',
@@ -494,38 +463,7 @@ export function getTheme() {
         },
       },
 
-      MuiSwitch: {
-        checked: {
-          width: '100%',
-          transform: 'translateX(4px)',
-          color: '#fff',
-          '& + $bar': {
-            backgroundColor: '#00c663',
-            opacity: 1,
-          },
-        },
-        root: {
-          width: 50,
-          height: 30,
-        },
-        icon: {
-          height: 13,
-          width: 13,
-          color: '#fff',
-        },
-        iconChecked: {
-          boxShadow: 'none',
-        },
-        bar: {
-          borderRadius: 13,
-          backgroundColor: 'darkgray',
-          top: '48%',
-          left: '48%',
-          height: 17,
-          width: 30,
-          opacity: 1,
-        },
-      },
+     
       MuiSelect: {
         select: {
           '& + [class*=variantA]': {

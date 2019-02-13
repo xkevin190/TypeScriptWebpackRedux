@@ -10,7 +10,7 @@ import Test from './Test'
 
 ReactDOM.render(
     <AppContainer>
-      <MuiThemeProvider theme={getTheme}>
+      <MuiThemeProvider theme={()=>getTheme()}>
         <Provider store={store}> 
             <Test />
         </Provider>

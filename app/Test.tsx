@@ -1,15 +1,16 @@
 import * as React from 'react'
-import { injectGlobal } from 'styled-components';
-import Button from '@material-ui/core/Button';
+import styled, { injectGlobal } from 'styled-components';
+import Chat from './pages/Chat'
+
 
 
 export default class Test extends React.Component {
     render(){
        return(
-
-        <Button variant="outlined" color="primary">
-            Hello World
-        </Button>
+        
+        <ContentContainer>
+          <Chat />
+        </ContentContainer>
 
        )
 
@@ -32,4 +33,25 @@ injectGlobal`
     font-family: Helvetica;
     font-size: 15px;
   }
+
+  #app{
+    height: 100%;
+  }
 `;
+
+const ContentContainer = styled.main`
+  &&{
+    background: #fff;
+    margin: auto;
+    height: 100%;
+    width: 1008px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width:1008px;
+    @media(max-Width: 1010px) {
+      width:100%;
+    }
+         
+  }
+`
