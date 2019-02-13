@@ -37,6 +37,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
     "@types/styled-components": "3.0.0",
     "connected-react-router": "^4.3.0",
     "electron-debug": "^1.1.0",

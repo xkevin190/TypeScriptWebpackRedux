@@ -1,15 +1,15 @@
 import * as React from 'react'
 import { injectGlobal } from 'styled-components';
+import Button from '@material-ui/core/Button';
 
-type Props ={
 
-}
-
-export default class Test extends React.Component<Props> {
+export default class Test extends React.Component {
     render(){
        return(
 
-        <div>hello world</div>
+        <Button variant="outlined" color="primary">
+            Hello World
+        </Button>
 
        )
 
