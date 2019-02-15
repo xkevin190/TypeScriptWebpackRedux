@@ -2,7 +2,7 @@ import { Reducer } from 'redux';
 import { ChatState, SessionActionTypes } from './type';
 
 const initialState: ChatState = {
-  currentChat: null,
+  currentChat: [],
 };
 
 export const chatReducer: Reducer<ChatState> = (
@@ -11,7 +11,7 @@ export const chatReducer: Reducer<ChatState> = (
 ) => {
   switch (action.type) {
     case SessionActionTypes.CHAT_USER_UPDATE: {
-      return { ...state, currentUser: action.payload };
+      return { ...state, currentChat: state.currentChat.concat(action.payload) };
     }
     default: {
       return state;

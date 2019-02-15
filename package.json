@@ -55,7 +55,9 @@
     "typeface-roboto": "^0.0.54",
     "typeface-titillium-web": "^0.0.54",
     "typesafe-actions": "^2.0.4",
-    "utility-types": "^2.0.0"
+    "utility-types": "^2.0.0",
+    "@material-ui/icons": "^3.0.1",
+    "@material-ui/lab": "^3.0.0-alpha.22"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

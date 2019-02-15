@@ -4,7 +4,7 @@ export interface Chat {
   }
   
   export interface ChatState {
-    currentChat: Chat | null;
+    currentChat: Chat[] | []
   }
   
   export  enum SessionActionTypes {

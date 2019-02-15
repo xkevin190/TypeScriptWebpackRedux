@@ -594,14 +594,12 @@ export function getTheme() {
         fontWeight: 600,
         fontFamily: 'Roboto',
         lineHeight: '1.16667em',
-        paddingTop: 15,
-        paddingLeft: 3,
-        marginBottom: 15,
       },
       body2: {
-        fontFamily: 'Roboto',
+        fontFamily: 'Titillium Web',
         fontSize: '12px',
         fontWeight: 500,
+        lineHeight: 1.7
       },
       display1: {
         // color:colors.text.primary

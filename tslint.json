@@ -26,8 +26,7 @@
     "triple-equals": true,
     "jsx-ban-elements": {
       "options": [
-        ["^form$", "Use app/components/forms/Form instead."],
-        ["^Typography$", "Use app/components/Text instead."]
+        ["^form$", "Use app/components/forms/Form instead."]
       ]
     },
     "jsx-boolean-value": false,
